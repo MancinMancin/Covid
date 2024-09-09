@@ -170,7 +170,7 @@ def merge_and_fill(group: DataFrameGroupBy) -> pd.DataFrame:
         :rtype:
             pd.DataFrame
     """
-    return group.ffill().bfill()[0]
+    return group.ffill().bfill().iloc[0]
 
 # Load data
 df, filled_df = load_data()
@@ -178,5 +178,5 @@ df, filled_df = load_data()
 # print(empty_percent(filled_df))
 # print(empty_percent(df))
 
-# fill_data(df)
-# save_data(df)
+fill_data(df)
+save_data(df)
