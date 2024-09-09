@@ -1,3 +1,3 @@
 # Covid
 <WORK IN PROGRESS>
-Data Visualization
+Data Visualization *WIP*
